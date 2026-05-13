@@ -4,6 +4,21 @@
   box-sizing: border-box;
 }
 
+/* CORES DAS CASAS */
+:root {
+  --stark-house-color: #939393;
+  --targaryen-house-color: #bb210c;
+  --lannister-house-color: #8b0800;
+  --baratheon-house-color: #e3c706;
+  --tyrell-house-color: #4b860c;
+  --martell-house-color: #dd8a07;
+  --tully-house-color-one: #a01008;
+  --tully-house-color-two: #08328b;
+  --arryn-house-color: #2b5cb2;
+  --greyjoy-house-color: #d8b10f;
+}
+
+/* TIPOGRAFIAS */
 @font-face {
   font-family: "Got";
   src: url("../fonts/got.woff2");
@@ -18,6 +33,7 @@ body {
   overflow-x: hidden; */
 }
 
+/* TEXTOS */
 h1,
 h2,
 h3 {
@@ -25,44 +41,39 @@ h3 {
   font-size: 2.4rem;
   color: white;
 }
-
 p {
   font-family: "Helvetica", sans-serif;
   font-size: 1.4rem;
   font-weight: 300;
+  color: white;
 }
 
+/* INPUT CHECKBOX - SOM AMBIENTE */
 label span {
   color: blue;
 }
-
 label #sound-on-off:checked + span {
   color: brown;
 }
-
 .container-checkbox {
   font-family: "Helvetica", sans-serif;
 }
-
 .switch {
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
 }
-
 .switch .switch-text {
   padding-right: 0.3rem;
   font-size: 1.2rem;
 }
-
 .switch .switch-wrapper {
   display: inline-block;
   width: 60px;
   height: 34px;
   position: relative;
 }
-
 .switch .switch-wrapper .switch-button {
   position: absolute;
   top: 0;
@@ -75,13 +86,11 @@ label #sound-on-off:checked + span {
   border-radius: 40px;
   background-color: gray;
 }
-
 .switch .switch-wrapper #sound-on-off {
   opacity: 0;
   width: 0;
   height: 0;
 }
-
 .switch .switch-wrapper .switch-button::before {
   content: "";
   width: 26px;
@@ -93,10 +102,21 @@ label #sound-on-off:checked + span {
   transition: 0.4s all ease;
   background-color: aliceblue;
 }
-
 .switch .switch-wrapper #sound-on-off:checked + .switch-button {
   background-color: darkkhaki;
 }
 .switch .switch-wrapper #sound-on-off:checked + .switch-button::before {
   transform: translateX(26px);
+}
+
+/* FOOTER PRINCIPAL */
+#main-footer {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  padding: 48px;
+
+  background-color: rgb(35, 35, 35);
 }

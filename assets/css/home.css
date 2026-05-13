@@ -1,16 +1,3 @@
-:root {
-  --stark-house-color: #939393;
-  --targaryen-house-color: #bb210c;
-  --lannister-house-color: #8b0800;
-  --baratheon-house-color: #e3c706;
-  --tyrell-house-color: #4b860c;
-  --martell-house-color: #dd8a07;
-  --tully-house-color-one: #a01008;
-  --tully-house-color-two: #08328b;
-  --arryn-house-color: #2b5cb2;
-  --greyjoy-house-color: #d8b10f;
-}
-
 #arryn-house {
   background: linear-gradient(to right, black, var(--arryn-house-color));
 }
@@ -57,13 +44,27 @@ main {
   align-items: center;
   justify-content: center;
 
-  padding: 40px 24px; /* respiro nas bordas */
   overflow-x: hidden;
 }
 
 main h1,
 main p {
   color: white;
+}
+
+#main-header {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 80px;
+
+  padding: 0 24px;
+
+  border: 1px dashed red;
 }
 
 #container-houses {
@@ -100,6 +101,13 @@ main p {
 
 .shield {
   height: 300px; /* 300px era grande demais — ajuste ao gosto */
+}
+
+.link-house-quiz:hover {
+  .shield {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+  }
 }
 
 .container-houses-title-and-infos {
