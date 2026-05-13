@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Got";
+  src: url("../fonts/got.woff2");
+}
+
+body {
+  background-color: black;
+  /* background-image: url("/assets/imgs/webp/the-iron-throne-bg.webp");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden; */
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Got", serif;
+  font-size: 2.4rem;
+  color: white;
+}
+
+p {
+  font-family: "Helvetica", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+}

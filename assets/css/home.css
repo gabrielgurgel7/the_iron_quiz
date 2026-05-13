@@ -1,0 +1,110 @@
+:root {
+  --stark-house-color: #939393;
+  --targaryen-house-color: #bb210c;
+  --lannister-house-color: #8b0800;
+  --baratheon-house-color: #e3c706;
+  --tyrell-house-color: #4b860c;
+  --martell-house-color: #dd8a07;
+  --tully-house-color-one: #a01008;
+  --tully-house-color-two: #08328b;
+  --arryn-house-color: #2b5cb2;
+  --greyjoy-house-color: #d8b10f;
+}
+
+#arryn-house {
+  background: linear-gradient(to right, black, var(--arryn-house-color));
+}
+
+#baratheon-house {
+  background: linear-gradient(to right, black, var(--baratheon-house-color));
+}
+
+#greyjoy-house {
+  background: linear-gradient(to right, black, var(--greyjoy-house-color));
+}
+
+#lannister-house {
+  background: linear-gradient(to right, black, var(--lannister-house-color));
+}
+
+#martell-house {
+  background: linear-gradient(to right, black, var(--martell-house-color));
+}
+
+#stark-house {
+  background: linear-gradient(to right, black, var(--stark-house-color));
+}
+
+#targaryen-house {
+  background: linear-gradient(to right, black, var(--targaryen-house-color));
+}
+
+#tully-house {
+  background: linear-gradient(to right, black, var(--tully-house-color-two));
+}
+
+#tyrell-house {
+  background: linear-gradient(to right, black, var(--tyrell-house-color));
+}
+
+main {
+  width: 100%;
+  min-height: 100vh; /* min-height em vez de height fixo */
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px 24px; /* respiro nas bordas */
+  overflow-x: hidden;
+}
+
+main h1,
+main p {
+  color: white;
+}
+
+#container-houses {
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 24px;
+}
+
+#container-houses ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+}
+#container-houses ul a {
+  text-decoration: none;
+}
+
+#container-houses article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px auto 64px 24px;
+  gap: 24px;
+
+  border-radius: 16px;
+
+  background-color: rgba(47, 47, 47, 0.542);
+}
+
+.shield {
+  height: 300px; /* 300px era grande demais — ajuste ao gosto */
+}
+
+.container-houses-title-and-infos {
+  display: inline-flex;
+  width: 500px;
+  flex-direction: column;
+  gap: 12px;
+}

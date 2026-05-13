@@ -1,0 +1,15 @@
+@media screen and (max-width: 480px) {
+  #container-houses article {
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .container-houses-title-and-infos {
+    width: auto;
+    text-align: center;
+  }
+
+  .shield {
+    height: 200px; /* 300px era grande demais — ajuste ao gosto */
+  }
+}
