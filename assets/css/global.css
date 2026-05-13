@@ -50,10 +50,7 @@ p {
 
 /* INPUT CHECKBOX - SOM AMBIENTE */
 label span {
-  color: blue;
-}
-label #sound-on-off:checked + span {
-  color: brown;
+  color: white;
 }
 .container-checkbox {
   font-family: "Helvetica", sans-serif;
@@ -107,6 +104,28 @@ label #sound-on-off:checked + span {
 }
 .switch .switch-wrapper #sound-on-off:checked + .switch-button::before {
   transform: translateX(26px);
+}
+
+#main-header {
+  display: flex;
+  flex-direction: row;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+
+  padding: 12px 24px;
+
+  /* border: 1px dashed red; */
+}
+
+#logo {
+  height: 80px;
 }
 
 /* FOOTER PRINCIPAL */
