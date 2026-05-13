@@ -31,3 +31,72 @@ p {
   font-size: 1.4rem;
   font-weight: 300;
 }
+
+label span {
+  color: blue;
+}
+
+label #sound-on-off:checked + span {
+  color: brown;
+}
+
+.container-checkbox {
+  font-family: "Helvetica", sans-serif;
+}
+
+.switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.switch .switch-text {
+  padding-right: 0.3rem;
+  font-size: 1.2rem;
+}
+
+.switch .switch-wrapper {
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  position: relative;
+}
+
+.switch .switch-wrapper .switch-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 40px;
+  background-color: gray;
+}
+
+.switch .switch-wrapper #sound-on-off {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch .switch-wrapper .switch-button::before {
+  content: "";
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  left: 4px;
+  bottom: 4px;
+  border-radius: 50%;
+  transition: 0.4s all ease;
+  background-color: aliceblue;
+}
+
+.switch .switch-wrapper #sound-on-off:checked + .switch-button {
+  background-color: darkkhaki;
+}
+.switch .switch-wrapper #sound-on-off:checked + .switch-button::before {
+  transform: translateX(26px);
+}

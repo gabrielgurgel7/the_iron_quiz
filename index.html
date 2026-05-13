@@ -5,12 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>THE IRON QUIZ</title>
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/script.js" defer></script>
   </head>
   <body>
     <main>
       <header>
         <h1>THE IRON QUIZ</h1>
         <p>Escolha sua casa</p>
+        <div class="container-checkbox">
+          <label class="switch" for="sound-on-off">
+            <span class="switch-text">Som</span>
+            <div class="switch-wrapper">
+              <input id="sound-on-off" type="checkbox" name="sound-on-off" />
+              <span class="switch-button"></span>
+            </div>
+          </label>
+        </div>
       </header>
       <section id="container-houses">
         <ul>
