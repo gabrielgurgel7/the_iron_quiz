@@ -25,12 +25,8 @@
 }
 
 body {
+  font-family: "Times New Roman", Times, serif;
   background-color: black;
-  /* background-image: url("/assets/imgs/webp/the-iron-throne-bg.webp");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow-x: hidden; */
 }
 
 /* TEXTOS */
@@ -42,7 +38,7 @@ h3 {
   color: white;
 }
 p {
-  font-family: "Helvetica", sans-serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 1.4rem;
   font-weight: 300;
   color: white;
@@ -53,7 +49,7 @@ label span {
   color: white;
 }
 .container-checkbox {
-  font-family: "Helvetica", sans-serif;
+  font-family: "Times New Roman", Times, serif;
 }
 .switch {
   display: flex;
@@ -125,7 +121,7 @@ label span {
 }
 
 #logo {
-  height: 80px;
+  height: 50px;
 }
 
 /* FOOTER PRINCIPAL */

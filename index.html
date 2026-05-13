@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>THE IRON QUIZ</title>
+    <link
+      rel="shortcut icon"
+      href="favicon_iron_quiz.svg"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <script src="assets/js/script.js" defer></script>
   </head>
   <body>
     <main>
       <header id="main-header">
-        <img id="logo" src="assets/imgs/svg/logo_iron_quiz.svg" alt="" />
+        <img id="logo" src="assets/imgs/svg/logo_iron_quiz_white.svg" alt="" />
         <div class="container-checkbox">
           <label class="switch" for="sound-on-off">
             <span class="switch-text">Som</span>
@@ -22,12 +27,19 @@
         </div>
       </header>
       <section id="hero">
-        <h1 style="font-style: oblique">
-          Você sobreviveria <br />
-          em Westeros?
-        </h1>
-        <p>Escolha sua casa e teste seus conhecimentos</p>
-        <a id="link-start-game" href="pages/houses.html">Começar</a>
+        <div id="container-hero-title">
+          <h1 id="hero-title" style="font-style: oblique">
+            Você sobreviveria <br />
+            em Westeros?
+          </h1>
+        </div>
+        <div>
+          <p id="hero-paragraph">
+            Escolha sua casa <br />
+            e teste seus conhecimentos
+          </p>
+          <a id="link-start-game" href="pages/houses.html">Começar</a>
+        </div>
       </section>
     </main>
     <footer id="main-footer">
