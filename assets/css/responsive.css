@@ -1,6 +1,24 @@
 @media screen and (max-width: 480px) {
   #hero {
     flex-direction: column;
+    justify-content: center;
+  }
+
+  #hero-title {
+    text-align: center;
+  }
+
+  #hero-paragraph {
+    text-align: center;
+    width: 300px;
+  }
+
+  #container-hero-subtitle-and-link {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
   }
 
   #container-houses article {

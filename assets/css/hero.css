@@ -1,10 +1,9 @@
 #hero {
   display: flex;
-  flex-direction: row;
 
   align-items: center;
   justify-content: center;
-  gap: 42px;
+  gap: 24px;
 
   width: 100%;
   height: 100vh;
@@ -16,7 +15,7 @@
   /* border: 1px dashed red; */
 }
 
-#hero #link-start-game {
+#link-start-game {
   display: inline-flex;
 
   align-items: center;
@@ -27,21 +26,24 @@
 
   border-radius: 999px;
 
+  text-transform: uppercase;
   text-decoration: none;
   font-family: "Helvetica", sans-serif;
   font-weight: 600;
 
-  color: white;
-  background-color: blue;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  mix-blend-mode: difference;
 }
 
-#hero #container-hero-title #hero-title {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 4.2rem;
-  line-height: 4.2rem;
+#hero-title {
+  font-family: "Times New Roman";
+  font-size: 3rem;
+  line-height: 3rem;
   color: rgb(255, 255, 255);
   mix-blend-mode: difference;
 }
-#hero #container-hero-title #hero-paragraph {
-  font-size: 1.6rem;
+#hero-paragraph {
+  font-size: 1.2rem;
+  width: 300px;
 }
